@@ -2,6 +2,9 @@
 #include "box.h"
 #include "checkerboard.h"
 #include "cross.h"
+#include "lower.h"
+#include "upper.h"
+#include "trapezoid.h"
 
 int main() {
   std::cout << "Running tests for box(length,width):\n";
@@ -16,5 +19,13 @@ int main() {
   std::cout << "------------------------------\n";
   std::cout << "cross(8):\n";
   cross(8);
+  std::cout << "Running tests for lower(sideLength):\n";
+  std::cout << "------------------------------\n";
+  std::cout << "lower(6):\n";
+  lower(6);
+  std::cout << "Running tests for upper(sideLength):\n";
+  std::cout << "------------------------------\n";
+  std::cout << "upper(5):\n";
+  upper(5);
   return 0;
 }
