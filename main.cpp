@@ -5,6 +5,7 @@
 #include "lower.h"
 #include "upper.h"
 #include "trapezoid.h"
+#include "checkerboard3x3.h"
 
 int main() {
   std::cout << "Running tests for box(length,width):\n";
@@ -27,5 +28,18 @@ int main() {
   std::cout << "------------------------------\n";
   std::cout << "upper(5):\n";
   upper(5);
+  std::cout << "Running tests for trapezoid(12,5):\n";
+  std::cout << "------------------------------\n";
+  std::cout << "trapezoid(12,5):\n";
+  trapezoid(12,5);
+  std::cout << "trapezoid(12,7):\n";
+  trapezoid(12,7);
+  std::cout << "Running tests for checkerboard3x3(width,height):\n";
+  std::cout << "------------------------------\n";
+  std::cout << "checkerboard3x3(16,11):\n";
+  checkerboard3x3(16,11);
+  std::cout << "\ncheckerboard3x3(27,27):\n";
+  checkerboard3x3(27,27);
+  std::cout << "\n\n\n";
   return 0;
 }
